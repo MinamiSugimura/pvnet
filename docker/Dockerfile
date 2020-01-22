@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.2-devel-ubuntu16.04
+FROM nvidia/cuda:10.0-devel-ubuntu16.04
 # NOTE: build this image from dir above Dockerfile location
 # USE BASH
 SHELL ["/bin/bash", "-c"]
@@ -47,7 +47,8 @@ USER $username
 
 # clone the repo and build ceres from source
 RUN cd /home/$username \
-    && git clone https://github.com/jwdinius/pvnet.git \
+    && git clone https://github.com/MinamiSugimura/pvnet_docker.git \
+#    && git clone https://github.com/jwdinius/pvnet.git \
     && cd pvnet \
     && chmod a+rwx build_ceres_for_docker.sh \
     && ./build_ceres_for_docker.sh /home/$username
