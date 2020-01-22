@@ -47,7 +47,7 @@ USER $username
 
 # clone the repo and build ceres from source
 RUN cd /home/$username \
-    && git clone https://github.com/MinamiSugimura/pvnet_docker.git \
+    && git clone https://github.com/MinamiSugimura/pvnet.git \
 #    && git clone https://github.com/jwdinius/pvnet.git \
     && cd pvnet \
     && chmod a+rwx build_ceres_for_docker.sh \
