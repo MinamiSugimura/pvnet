@@ -26,3 +26,4 @@ dependencies:
       - glumpy==1.0.6
       - scikit_image==0.13.1
       - easydict==1.7
+      - pillow==6.2.1
